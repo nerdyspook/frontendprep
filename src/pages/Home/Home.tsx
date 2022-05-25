@@ -18,7 +18,7 @@ const Home = () => {
   ];
 
   return (
-    <div className="">
+    <main>
       <Hero />
       <div className=" w-full py-16 px-4">
         <div className="max-w-[1240px] mx-auto grid sm:grid-cols-2 md:grid-cols-3 gap-4 xl:gap-8">
@@ -27,7 +27,7 @@ const Home = () => {
           ))}
         </div>
       </div>
-    </div>
+    </main>
   );
 };
 
