@@ -1,10 +1,12 @@
 import { BsQuestionCircle } from "react-icons/bs";
+import { Link } from "react-router-dom";
 
 const Rules = () => {
+  const currentQuiz = sessionStorage.getItem("currentQuiz");
   return (
     <main className="max-w-[1240px] mx-auto">
       <div className="flex flex-col items-center text-white text-xl">
-        <h1 className="text-4xl md:text-5xl font-bold uppercase mb-8 md:mb-12">
+        <h1 className="text-4xl md:text-5xl font-bold uppercase mb-8 md:mb-12 xl:mt-10">
           Category
         </h1>
         <span className="w-60 md:w-1/3 flex items-center m-4 ">
@@ -25,9 +27,12 @@ const Rules = () => {
             Each question will get 60 seconds to be answered
           </p>
         </span>
-        <button className="mt-6 md:mt-16 py-2 px-10 md:py-4 md:px-16 text-sm md:text-lg font-medium text-center text-white bg-teal-700 rounded-lg hover:bg-teal-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-teal-600 dark:hover:bg-teal-700 dark:focus:ring-teal-800">
+        <Link
+          to={`/questions/${currentQuiz}`}
+          className="mt-6 md:mt-16 py-2 px-10 md:py-4 md:px-16 text-sm md:text-lg font-medium text-center text-white bg-teal-700 rounded-lg hover:bg-teal-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-teal-600 dark:hover:bg-teal-700 dark:focus:ring-teal-800"
+        >
           Start Quiz
-        </button>
+        </Link>
       </div>
     </main>
   );
