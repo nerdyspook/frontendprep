@@ -31,7 +31,6 @@ const AuthContextProvider = ({ children }: reactChildren) => {
 
   useEffect(() => {
     const onAuthChange = onAuthStateChanged(auth, (currentUser) => {
-      console.log(currentUser);
       setUser(currentUser);
     });
 

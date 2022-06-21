@@ -99,12 +99,12 @@ const Login = () => {
                 Remember me
               </label>
             </div>
-            <a
-              href="#"
+            <Link
+              to="#"
               className="ml-auto text-sm text-blue-700 hover:underline dark:text-blue-500"
             >
               Forgot Password?
-            </a>
+            </Link>
           </div>
           {error && <span className="text-red-600">{error}</span>}
           <button

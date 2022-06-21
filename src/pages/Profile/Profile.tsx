@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { useAuth } from "../../context/AuthContext";
 
 const Profile = () => {
@@ -23,8 +23,8 @@ const Profile = () => {
       <h1 className="text-center text-4xl font-semibold mb-8">Profile</h1>
       <ul className=" text-sm font-medium text-center text-gray-500 rounded-lg divide-x divide-gray-200 shadow flex dark:divide-gray-700 dark:text-gray-400">
         <li className="w-full">
-          <a
-            href="#"
+          <Link
+            to="#"
             className={`inline-block py-4 px-8 w-full  bg-gray-100 rounded-l-lg dark:hover:text-white ${
               activeTab
                 ? "dark:bg-gray-700 dark:text-white"
@@ -36,12 +36,12 @@ const Profile = () => {
             }}
           >
             User Details
-          </a>
+          </Link>
         </li>
 
         <li className="w-full">
-          <a
-            href="#"
+          <Link
+            to="#"
             className={`inline-block py-4 px-8 w-full bg-white rounded-r-lg hover:text-gray-700  dark:hover:text-white ${
               !activeTab
                 ? "dark:bg-gray-700 dark:text-white"
@@ -52,7 +52,7 @@ const Profile = () => {
             }}
           >
             History
-          </a>
+          </Link>
         </li>
       </ul>
 

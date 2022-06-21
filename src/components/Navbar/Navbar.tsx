@@ -22,7 +22,14 @@ const Navbar = () => {
 
   return (
     <header className="text-white flex justify-between items-center h-24 max-w-[1240px] mx-auto px-4">
-      <div className="w-full  font-bold text-[#14b8a6] ">FRONTEND-PREP</div>
+      <div
+        className="w-full  font-bold text-[#14b8a6] "
+        onClick={() => {
+          navigate("/");
+        }}
+      >
+        FRONTEND-PREP
+      </div>
       <ul className="hidden md:flex">
         <li>
           <NavLink to="/" className="p-4">
@@ -71,7 +78,12 @@ const Navbar = () => {
             : "fixed left-[-100%]"
         }
       >
-        <div className="w-full  font-bold text-[#14b8a6] mt-5 p-4">
+        <div
+          className="w-full  font-bold text-[#14b8a6] mt-5 p-4"
+          onClick={() => {
+            navigate("/");
+          }}
+        >
           FRONTEND-PREP
         </div>
         <div className="pt-2 uppercase">

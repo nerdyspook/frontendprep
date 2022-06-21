@@ -53,7 +53,7 @@ const Results = () => {
 
       <section className="mx-4">
         {questions?.map((questionObj, currentQuestionId) => (
-          <>
+          <div key={currentQuestionId}>
             <div className="flex justify-between ">
               <span className="">
                 Question: {currentQuestionId + 1}/{questions?.length}
@@ -79,7 +79,7 @@ const Results = () => {
                 </button>
               ))}
             </div>
-          </>
+          </div>
         ))}
       </section>
     </div>

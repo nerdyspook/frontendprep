@@ -1,6 +1,6 @@
 import Typed from "react-typed";
 
-const Hero = () => {
+const Hero = ({ executeScroll }: any) => {
   return (
     <div className="text-white ">
       <div className="max-w-[800px] mt-[-96px] w-full h-screen mx-auto text-center flex flex-col justify-center">
@@ -25,7 +25,10 @@ const Hero = () => {
         <p className="md:text-xl text-m font-bold text-slate-600">
           Compare your score with others in Leaderboard.
         </p>
-        <button className="bg-[#14b8a6] w-[200px] rounded-md font-medium my-6 mx-auto py-3 text-[#111827]">
+        <button
+          className="bg-[#14b8a6] w-[200px] rounded-md font-medium my-6 mx-auto py-3 text-[#111827]"
+          onClick={executeScroll}
+        >
           Get Started
         </button>
       </div>
