@@ -1,6 +1,6 @@
+import { useRef } from "react";
 import Hero from "../../components/Hero/Hero";
 import QuizCard from "../../components/QuizCard/QuizCard";
-import React, { useRef } from "react";
 
 const scrollToRef = (ref: any) => window.scrollTo(0, ref.current.offsetTop);
 
