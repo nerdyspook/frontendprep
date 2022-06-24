@@ -1,5 +1,8 @@
+import { useRef } from "react";
 import Hero from "../../components/Hero/Hero";
 import QuizCard from "../../components/QuizCard/QuizCard";
+
+const scrollToRef = (ref: any) => window.scrollTo(0, ref.current.offsetTop);
 
 const Home = () => {
   const htmlIcon = require("../../assets/html.png");
@@ -17,10 +20,13 @@ const Home = () => {
     { icon: nodeIcon, title: "Node.js" },
   ];
 
+  const myRef = useRef(null);
+  const executeScroll = () => scrollToRef(myRef);
+
   return (
     <main>
-      <Hero />
-      <div className=" w-full py-16 px-4">
+      <Hero executeScroll={executeScroll} />
+      <div className=" w-full py-16 px-4" id="quizzes" ref={myRef}>
         <div className="max-w-[1240px] mx-auto grid sm:grid-cols-2 md:grid-cols-3 gap-4 xl:gap-8">
           {topics.map((topic, index) => (
             <QuizCard

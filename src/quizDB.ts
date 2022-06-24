@@ -316,7 +316,7 @@ export const quizDB = [
           { value: "Object Serialization", isCorrect: true },
           { value: "Object Encapsulation", isCorrect: false },
           { value: "Object Inheritance", isCorrect: false },
-          { value: "None of the above", isCorrect: true },
+          { value: "None of the above", isCorrect: false },
         ],
       },
       {

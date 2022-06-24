@@ -97,8 +97,6 @@ const Questions = () => {
               currentQuestion + 1 === questions?.length
                 ? submitHandler()
                 : nextHandler();
-
-              console.log(questions);
             }}
           >
             {currentQuestion + 1 === questions?.length ? "submit" : "next"}
