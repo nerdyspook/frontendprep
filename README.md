@@ -1,46 +1,85 @@
-# Getting Started with Create React App
+#### (Frontend-prep | Quiz App)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<div align="center">
+  <img src="./public/favicon.ico" width="150" title="Frontend-prep Logo">
 
-## Available Scripts
+## [Frontend-prep | Quiz App](https://neog-frontendprep.netlify.app/)
 
-In the project directory, you can run:
+A Video Library for Hodophiles
 
-### `yarn start`
+![Forks](https://img.shields.io/github/forks/nerdyspook/frontendprep)
+![Stars](https://img.shields.io/github/stars/nerdyspook/frontendprep)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+</div>
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+---
 
-### `yarn test`
+## Quick Start
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Preview Link : https://neog-frontendprep.netlify.app
 
-### `yarn build`
+## Run Locally
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Clone the project
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```bash
+  git clone https://github.com/nerdyspook/frontendprep.git
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Go to the project directory
 
-### `yarn eject`
+```bash
+  cd frontendprep
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Install dependencies
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```bash
+  yarn install
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+Start the server
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+```bash
+  yarn start
+```
 
-## Learn More
+---
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Pages Included
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- Home Page
+- Rules Page
+- Quiz Question Page
+- Results Page
+- Profile Page
+- Login Page
+- Signup Page
+
+---
+
+## Functionalities
+
+- Authentication
+
+  - Users can sign-up in the app
+  - Users can log in the app
+  - Users can logout from the app
+
+- Quiz Functionalities
+
+  - Users can select only one out of four options
+  - Users can go forward and backward while selecting answers
+  - Users can check the current question number at the top of each question
+
+---
+
+## Tech Stack
+
+- [React JS](https://reactjs.org/)
+- [Typescript](https://www.typescriptlang.org/)
+- [Firebase](https://firebase.google.com/)
+- [React Router v6](https://reactrouter.com/)
+- [Tailwind CSS](https://tailwindcss.com/)
+
+---
